@@ -1,0 +1,1 @@
+# Trabalho-8---Seguran-a-DevSecOps-e-FinOps-aplicados
