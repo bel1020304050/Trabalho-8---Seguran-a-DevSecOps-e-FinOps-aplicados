@@ -1,7 +1,6 @@
+# 05 — Checklist de Segurança de Containers e Dados
 
- 05 — Checklist de Segurança de Containers e Dados
-
- 1. Segurança de Containers
+## 1. Segurança de Containers
 
 | Verificação | Aplicação proposta | Status |
 |---|---|---|
@@ -16,7 +15,7 @@
 | Rede | Restringir comunicação entre serviços | A implementar/verificar |
 | Runtime | Monitorar comportamento e eventos suspeitos | A implementar/verificar |
 
- 2. Proteção de Dados
+## 2. Proteção de Dados
 
 | Verificação | Aplicação proposta | Status |
 |---|---|---|
@@ -31,7 +30,7 @@
 | Retenção | Definir prazo para logs e dados | A implementar/verificar |
 | Descarte | Excluir dados conforme política aplicável | A implementar/verificar |
 
- 3. Cuidados Específicos da Biblioteca
+## 3. Cuidados Específicos da Biblioteca
 
 - Um leitor deve visualizar somente seus próprios dados e empréstimos.
 - Bibliotecários podem realizar operações necessárias ao atendimento, sem administrar infraestrutura.
@@ -40,16 +39,16 @@
 - Logs de auditoria devem ser preservados contra alteração por usuários comuns.
 - Dados pessoais devem ser tratados conforme a legislação aplicável, incluindo a LGPD.
 
- 4. Critérios de Aprovação
+## 4. Critérios de Aprovação
 
 A imagem só deve ser publicada quando passar pelas verificações obrigatórias do pipeline.
 
 O ambiente de produção deve ser liberado somente após confirmação dos controles de acesso, proteção dos dados, backup e monitoramento.
 
- 5. Observação
+## 5. Observação
 
 O status "A implementar/verificar" indica controles propostos neste projeto acadêmico. Não significa que o sistema já possui essas configurações implementadas.
 
- 6. Conclusão
+## 6. Conclusão
 
 A segurança dos containers e dos dados é fundamental para proteger as informações da Biblioteca, evitar vulnerabilidades e garantir a continuidade do serviço.
