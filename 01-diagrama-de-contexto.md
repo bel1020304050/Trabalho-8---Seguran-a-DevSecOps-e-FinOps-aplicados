@@ -1,6 +1,6 @@
 
  01 — Diagrama de Contexto
-
+ 
  1. Finalidade
 
 O diagrama apresenta os principais usuários, serviços e componentes que interagem com o Sistema Web de Biblioteca, destacando os limites de responsabilidade e os fluxos de informação.
