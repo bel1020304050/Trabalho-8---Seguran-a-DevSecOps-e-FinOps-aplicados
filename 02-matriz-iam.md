@@ -1,13 +1,12 @@
+# 02 — Matriz IAM com Menor Privilégio
 
- 02 — Matriz IAM com Menor Privilégio
-
- 1. Objetivo
+## 1. Objetivo
 
 IAM (Identity and Access Management) é responsável por controlar quem pode acessar cada recurso e quais ações pode executar.
 
 O princípio do menor privilégio determina que cada identidade receba somente as permissões necessárias para realizar suas atividades.
 
- 2. Matriz de acesso
+## 2. Matriz de acesso
 
 | Identidade | Recurso | Ação permitida | Condição |
 |---|---|---|---|
@@ -21,7 +20,7 @@ O princípio do menor privilégio determina que cada identidade receba somente a
 | Auditor | Trilhas de auditoria | Consultar e exportar evidências | MFA e acesso somente leitura |
 | Operador | Kubernetes de produção | Consultar estado e executar ações autorizadas | Acesso temporário, aprovado e registrado |
 
- 3. Regras de menor privilégio
+## 3. Regras de menor privilégio
 
 - Cada pessoa utiliza sua própria conta. É proibido compartilhar credenciais administrativas.
 - A conta de desenvolvimento não recebe permissão de administração em produção.
@@ -31,7 +30,7 @@ O princípio do menor privilégio determina que cada identidade receba somente a
 - Acesso administrativo exige MFA, justificativa, prazo definido e registro.
 - As permissões devem ser revisadas periodicamente e removidas quando deixarem de ser necessárias.
 
- 4. Autenticação e autorização
+## 4. Autenticação e autorização
 
 **Autenticação** confirma a identidade de uma pessoa ou serviço, por exemplo, utilizando senha e autenticação multifator (MFA).
 
@@ -39,7 +38,7 @@ O princípio do menor privilégio determina que cada identidade receba somente a
 
 Estar autenticado não significa ter acesso irrestrito ao sistema.
 
- 5. Permissão mais crítica
+## 5. Permissão mais crítica
 
 A permissão mais crítica é a administração do ambiente de produção e do banco de dados.
 
@@ -47,12 +46,12 @@ Se uma conta com esse nível de acesso for comprometida, um invasor poderá alte
 
 **Controle proposto:** conta individual, MFA obrigatório, elevação temporária de privilégio, aprovação, registro de sessão e revisão das ações realizadas.
 
- 6. Revisão de acessos
+## 6. Revisão de acessos
 
 A cada mês, o responsável técnico deve conferir usuários ativos, papéis, contas de serviço e permissões não utilizadas.
 
 Em desligamentos ou mudanças de função, o acesso deve ser revogado ou ajustado imediatamente.
 
- 7. Conclusão
+## 7. Conclusão
 
 A utilização de IAM com o princípio do menor privilégio reduz os riscos de acessos indevidos e limita os danos que podem ocorrer caso uma conta seja comprometida.
