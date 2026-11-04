@@ -1,11 +1,10 @@
+# 01 — Diagrama de Contexto
 
- 01 — Diagrama de Contexto
- 
- 1. Finalidade
+## 1. Finalidade
 
 O diagrama apresenta os principais usuários, serviços e componentes que interagem com o Sistema Web de Biblioteca, destacando os limites de responsabilidade e os fluxos de informação.
 
- 2. Diagrama de Contexto
+## 2. Diagrama de Contexto
 
 ```mermaid
 flowchart TB
@@ -35,7 +34,7 @@ flowchart TB
     LOG -->|Alertas de segurança e operação| A
 ```
 
- 3. Componentes e responsabilidades
+## 3. Componentes e responsabilidades
 
 | Componente | Responsabilidade | Proteção necessária |
 |---|---|---|
@@ -50,7 +49,7 @@ flowchart TB
 | Cofre de segredos | Fornecer credenciais | Acesso mínimo, rotação e auditoria |
 | Observabilidade | Registrar eventos e alertar | Integridade, retenção e acesso controlado |
 
- 4. Dados que precisam de proteção
+## 4. Dados que precisam de proteção
 
 - Dados cadastrais dos leitores, como nome, e-mail e informações de contato.
 - Credenciais e identificadores de sessão.
@@ -58,7 +57,7 @@ flowchart TB
 - Dados do catálogo e documentos armazenados.
 - Logs técnicos, que não devem registrar senhas, tokens ou dados pessoais desnecessários.
 
- 5. Principais ameaças
+## 5. Principais ameaças
 
 1. Uso indevido de conta administrativa compartilhada.
 2. Vazamento de senha do banco ou token do pipeline.
@@ -67,6 +66,6 @@ flowchart TB
 5. Exposição pública indevida do banco de dados.
 6. Exclusão ou alteração de registros sem rastreabilidade.
 
- 6. Conclusão
+## 6. Conclusão
 
 O diagrama evidencia que a proteção deve abranger usuários, aplicação, infraestrutura, dados, pipeline e monitoramento, e não somente a rede.
