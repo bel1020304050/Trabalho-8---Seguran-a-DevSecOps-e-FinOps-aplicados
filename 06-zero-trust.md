@@ -1,12 +1,12 @@
- 06 — Aplicação do Modelo Zero Trust
+# 06 — Aplicação do Modelo Zero Trust
 
- 1. O que é Zero Trust?
+## 1. O que é Zero Trust?
 
 Zero Trust é um modelo de segurança baseado no princípio de nunca confiar automaticamente em usuários, dispositivos ou sistemas. Todo acesso precisa ser verificado, autorizado e monitorado.
 
 No Sistema de Biblioteca, esse modelo ajuda a proteger os dados dos leitores, os empréstimos, os cadastros e as funções administrativas.
 
- 2. Princípios aplicados
+## 2. Princípios aplicados
 
 | Princípio | Aplicação no Sistema de Biblioteca |
 |---|---|
@@ -17,7 +17,7 @@ No Sistema de Biblioteca, esse modelo ajuda a proteger os dados dos leitores, os
 | Segmentação | Separar os ambientes de desenvolvimento, testes e produção. |
 | Autenticação multifator | Exigir uma segunda etapa de autenticação para contas administrativas. |
 
- 3. Exemplo de aplicação para administradores
+## 3. Exemplo de aplicação para administradores
 
 Quando um administrador precisar acessar funções importantes do sistema, deverão ser aplicadas as seguintes medidas:
 
@@ -28,7 +28,7 @@ Quando um administrador precisar acessar funções importantes do sistema, dever
 5. Registrar as ações realizadas em logs de auditoria.
 6. Revogar permissões temporárias após o uso.
 
- 4. Exemplo de aplicação para leitores
+## 4. Exemplo de aplicação para leitores
 
 Um leitor deve consultar somente seus próprios empréstimos e informações pessoais.
 
@@ -36,7 +36,7 @@ Mesmo que tente alterar o identificador de um empréstimo diretamente pela URL, 
 
 Essa validação evita que um leitor acesse informações de outras pessoas.
 
- 5. Medidas recomendadas
+## 5. Medidas recomendadas
 
 - Utilizar HTTPS para proteger a comunicação.
 - Aplicar autenticação multifator em contas privilegiadas.
@@ -45,10 +45,10 @@ Essa validação evita que um leitor acesse informações de outras pessoas.
 - Separar os ambientes de desenvolvimento e produção.
 - Revisar periodicamente as permissões dos usuários.
 
- 6. Benefícios esperados
+## 6. Benefícios esperados
 
 A aplicação do Zero Trust contribui para reduzir acessos indevidos, proteger informações pessoais, limitar danos em caso de comprometimento de uma conta e melhorar o controle sobre as operações do sistema.
 
- 7. Conclusão
+## 7. Conclusão
 
 O modelo Zero Trust fortalece a segurança do Sistema de Biblioteca ao exigir verificação contínua, controle de permissões e monitoramento dos acessos. Dessa forma, nenhum usuário ou dispositivo recebe confiança automática.
