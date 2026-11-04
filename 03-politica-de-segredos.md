@@ -1,11 +1,10 @@
+# 03 — Política de Gerenciamento de Segredos
 
- 03 — Política de Gerenciamento de Segredos
-
- 1. Objetivo
+## 1. Objetivo
 
 Definir como senhas, tokens, chaves de API, certificados e credenciais do banco de dados serão criados, armazenados, utilizados, renovados e revogados.
 
- 2. Regras obrigatórias
+## 2. Regras obrigatórias
 
 1. Segredos devem ficar em um cofre de segredos apropriado, nunca diretamente no código-fonte.
 2. É proibido publicar senhas, tokens ou chaves em repositórios Git, arquivos de configuração versionados, imagens de containers, mensagens ou logs.
@@ -18,7 +17,7 @@ Definir como senhas, tokens, chaves de API, certificados e credenciais do banco 
 9. Segredos antigos devem ser revogados após a substituição.
 10. Senhas e tokens nunca devem aparecer em logs ou mensagens de erro.
 
- 3. Procedimento para a senha do banco de dados
+## 3. Procedimento para a senha do banco de dados
 
 - Criar uma credencial exclusiva para a aplicação.
 - Conceder somente as permissões necessárias ao banco de dados da Biblioteca.
@@ -28,7 +27,7 @@ Definir como senhas, tokens, chaves de API, certificados e credenciais do banco 
 - Registrar o acesso ao segredo sem registrar seu valor.
 - Rotacionar a credencial e validar a conexão após a troca.
 
- 4. Resposta a vazamento
+## 4. Resposta a vazamento
 
 Se uma chave ou senha for exposta:
 
@@ -40,7 +39,7 @@ Se uma chave ou senha for exposta:
 6. Registrar o incidente, seu impacto e as ações corretivas.
 7. Revisar o processo que permitiu a exposição.
 
- 5. Responsáveis
+## 5. Responsáveis
 
 | Responsável | Atividade |
 |---|---|
@@ -49,7 +48,7 @@ Se uma chave ou senha for exposta:
 | Pipeline | Usar identidade de serviço e segredo somente quando necessário |
 | Segurança | Revisar alertas, acessos e incidentes |
 
- 6. Evidências
+## 6. Evidências
 
 As evidências esperadas são:
 
@@ -60,6 +59,6 @@ As evidências esperadas são:
 
 Os valores dos segredos nunca devem ser expostos nas evidências.
 
- 7. Conclusão
+## 7. Conclusão
 
 O gerenciamento adequado de segredos protege as credenciais utilizadas pelo Sistema de Biblioteca, reduzindo o risco de vazamentos e acessos não autorizados.
