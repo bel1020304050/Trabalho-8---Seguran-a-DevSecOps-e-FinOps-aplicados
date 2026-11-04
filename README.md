@@ -3,7 +3,7 @@
 Disciplina: Cloud Computing e DevOps Avançado  
 Curso: CST em Sistemas para Internet — 6º Período  
 Estudo de caso: Sistema Web de Biblioteca  
-Aluno(a): Isabely Novais Dalava  
+Aluno(a): Isabely Novais Dalava, 
 Professor: Diogo Ranghetti 
 Data: 04/11/2026
 
